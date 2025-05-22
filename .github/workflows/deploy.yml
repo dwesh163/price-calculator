@@ -18,7 +18,7 @@ concurrency:
 env:
     NODE_VERSION: 22
     GENERIC_LIBRARY: frontend/generic-library
-    BASE_URL: '/NextPause'
+    BASE_URL: '/price-calculator'
 
 jobs:
     deploy:
