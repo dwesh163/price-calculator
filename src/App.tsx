@@ -14,7 +14,7 @@ function App() {
 	const [drinks, setDrinks] = useState<DrinkItem[]>([
 		{ id: '1', name: 'Suze', price: 4.0, color: 'bg-blue-500', text: 'SUZE', quantity: 0 },
 		{ id: '2', name: 'Martini', price: 4.0, color: 'bg-yellow-500', text: 'MARTINI', quantity: 0 },
-		{ id: '3', name: 'Passon', price: 5.0, color: 'bg-green-500', text: 'PASSON', quantity: 0 },
+		{ id: '3', name: 'Passon', price: 5.0, color: 'bg-green-500', text: 'PASSOA', quantity: 0 },
 		{ id: '4', name: 'Malibu', price: 5.0, color: 'bg-cyan-500', text: 'MALIBU', quantity: 0 },
 		{ id: '5', name: 'Apfelkorn', price: 5.0, color: 'bg-amber-600', text: 'APFELKORN', quantity: 0 },
 		{ id: '6', name: 'Trojka', price: 6.0, color: 'bg-emerald-500', text: 'TROJKA', quantity: 0 },
