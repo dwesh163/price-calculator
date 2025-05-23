@@ -75,7 +75,7 @@ function App() {
 						<div key={drink.id} className={`${drink.color} rounded-2xl sm:rounded-3xl p-3 sm:p-4 aspect-square flex flex-col shadow-lg hover:shadow-xl transition-all duration-200 active:scale-95`}>
 							<button onClick={() => handleDrinkTap(drink.id)} className="flex-1 focus:outline-none active:scale-95 transition-transform mb-2 sm:mb-3">
 								<div className="w-full h-full flex items-center justify-center rounded-xl sm:rounded-2xl backdrop-blur-sm">
-									<div className="text-white font-bold text- text-center px-1" style={{ fontFamily: 'Montserrat', fontWeight: 900 }}>
+									<div className="text-white font-bold text-xs text-center px-1" style={{ fontFamily: 'Montserrat', fontWeight: 900 }}>
 										{drink.text}
 									</div>
 								</div>
