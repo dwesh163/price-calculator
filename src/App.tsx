@@ -12,15 +12,22 @@ interface DrinkItem {
 
 function App() {
 	const [drinks, setDrinks] = useState<DrinkItem[]>([
-		{ id: '1', name: 'Bière', price: 4.0, color: 'bg-blue-500', text: 'BIÈRE', quantity: 0 },
-		{ id: '2', name: 'Corona', price: 5.0, color: 'bg-yellow-500', text: 'CORONA', quantity: 0 },
-		{ id: '3', name: 'Heineken', price: 4.5, color: 'bg-green-500', text: 'HEINEKEN', quantity: 0 },
-		{ id: '4', name: 'Vodka', price: 8.0, color: 'bg-cyan-500', text: 'VODKA', quantity: 0 },
-		{ id: '5', name: 'Whisky', price: 7.5, color: 'bg-amber-600', text: 'WHISKY', quantity: 0 },
-		{ id: '6', name: 'Gin', price: 9.0, color: 'bg-emerald-500', text: 'GIN', quantity: 0 },
-		{ id: '7', name: 'Rhum', price: 6.0, color: 'bg-red-500', text: 'RHUM', quantity: 0 },
-		{ id: '8', name: 'Tequila', price: 7.0, color: 'bg-purple-500', text: 'TEQUILA', quantity: 0 },
-		{ id: '9', name: 'Vin', price: 6.5, color: 'bg-rose-500', text: 'VIN', quantity: 0 },
+		{ id: '1', name: 'Suze', price: 4.0, color: 'bg-blue-500', text: 'SUZE', quantity: 0 },
+		{ id: '2', name: 'Martini', price: 4.0, color: 'bg-yellow-500', text: 'MARTINI', quantity: 0 },
+		{ id: '3', name: 'Passon', price: 5.0, color: 'bg-green-500', text: 'PASSON', quantity: 0 },
+		{ id: '4', name: 'Malibu', price: 5.0, color: 'bg-cyan-500', text: 'MALIBU', quantity: 0 },
+		{ id: '5', name: 'Apfelkorn', price: 5.0, color: 'bg-amber-600', text: 'APFELKORN', quantity: 0 },
+		{ id: '6', name: 'Trojka', price: 6.0, color: 'bg-emerald-500', text: 'TROJKA', quantity: 0 },
+		{ id: '7', name: 'Trojka Rouge', price: 6.0, color: 'bg-red-500', text: 'TROJKA ROUGE', quantity: 0 },
+		{ id: '8', name: 'Trojka Verte', price: 6.0, color: 'bg-purple-500', text: 'TROJKA VERTE', quantity: 0 },
+		{ id: '9', name: 'Jäger', price: 6.0, color: 'bg-rose-500', text: 'JÄGER', quantity: 0 },
+		{ id: '10', name: 'Gin', price: 6.0, color: 'bg-indigo-500', text: 'GIN', quantity: 0 },
+		{ id: '11', name: 'Whisky', price: 6.0, color: 'bg-pink-500', text: 'WHISKY', quantity: 0 },
+		{ id: '12', name: 'Rhum', price: 6.0, color: 'bg-orange-500', text: 'RHUM', quantity: 0 },
+		{ id: '13', name: 'Smirnoff Ice', price: 6.0, color: 'bg-teal-500', text: 'SMIRNOFF ICE', quantity: 0 },
+		{ id: '14', name: 'Desperados', price: 6.0, color: 'bg-lime-500', text: 'DESPERADOS', quantity: 0 },
+		{ id: '15', name: 'Bière', price: 4.0, color: 'bg-blue-600', text: 'BIÈRE', quantity: 0 },
+		{ id: '16', name: 'Minérale', price: 3.0, color: 'bg-gray-500', text: 'MINÉRALE', quantity: 0 },
 	]);
 
 	const [total, setTotal] = useState(0);
@@ -68,7 +75,7 @@ function App() {
 						<div key={drink.id} className={`${drink.color} rounded-2xl sm:rounded-3xl p-3 sm:p-4 aspect-square flex flex-col shadow-lg hover:shadow-xl transition-all duration-200 active:scale-95`}>
 							<button onClick={() => handleDrinkTap(drink.id)} className="flex-1 focus:outline-none active:scale-95 transition-transform mb-2 sm:mb-3">
 								<div className="w-full h-full flex items-center justify-center rounded-xl sm:rounded-2xl backdrop-blur-sm">
-									<div className="text-white font-bold text-sm text-center px-1" style={{ fontFamily: 'Montserrat', fontWeight: 900 }}>
+									<div className="text-white font-bold text- text-center px-1" style={{ fontFamily: 'Montserrat', fontWeight: 900 }}>
 										{drink.text}
 									</div>
 								</div>
